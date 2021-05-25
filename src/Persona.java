@@ -80,6 +80,18 @@ public class Persona {
             if (edad<=0){
                 throw new Excepciones(1);
             }
+            this.setNombre(lector.nextLine());
+            if (nombre==null){
+                throw new Excepciones(2);
+            }
+            this.setApellido1(lector.nextLine());
+            if (apellido1==null){
+                throw new Excepciones(3);
+            }
+            this.setApellido2(lector.nextLine());
+            if (apellido2==null){
+                throw new Excepciones(4);
+            }
         } catch (Excepciones ex){
             System.out.println(ex.getMessage());
         }
